@@ -1,0 +1,219 @@
+.App {
+  height: 100vh;
+  background-color: #0d1116;
+  /* overflow: scroll; */
+  text-align: center;
+}
+
+.container {
+  height: 100%;
+  background-color: #0d1116;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  justify-content: space-between;
+
+}
+
+.header-container {
+  padding-top: 30px;
+  padding: 30px 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nft-containers {
+  width: 100%;
+  
+}
+.title-nft {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+.title-nft a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 8px 8px;
+  background: #ffffff49;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.header {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+  
+}
+
+.header-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sub-text {
+  font-size: 12px;
+  color: white;
+  opacity: 0.6;
+}
+
+.button-text-secondary {
+  color: #ffff;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.6;
+  margin-left: 10px;
+}
+
+.button-text-secondary span {
+  color: #ffff;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.4;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-template-columns: auto 1fr; */
+  grid-gap: 10px;
+  justify-items: center;
+  grid-auto-flow: dense;
+  margin: 0;
+  padding: 0;
+}
+
+.nftCard {
+  width: 240px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nftCard img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.nft-des {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.nft-des p {
+  font-size: 12px;
+  color: #f2f2f2;
+  opacity: 0.6;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.gradient-text {
+  font-size: 18px;
+  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-button {
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.connect-wallet-button {
+  background: -webkit-linear-gradient(left, #60c657, #35aee2);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.mint-button {
+  background: -webkit-linear-gradient(left, #a200d6, #ff6fdf);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin-right: 15px;
+}
+
+.opensea-button {
+  background-color: rgb(32, 129, 226);
+}
+
+.mint-count {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* KeyFrames */
+@-webkit-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
